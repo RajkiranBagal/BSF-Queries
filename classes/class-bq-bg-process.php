@@ -44,30 +44,21 @@ class BQ_Background_Process extends WP_Background_Process {
 		
 		$filepath = BQ_ABSPATH . 'includes/file.csv';
 		
-		$fd = fopen($filepath, 'w');
+		$fd = fopen($filepath, 'w+');
 		
 		foreach($results as $record) {
 			fputcsv($fd, $record);
 		}
 		rewind($fd);
 		fclose($fd);
-		$to = "rajkiranbagal8585@gmail.com";
-		$subject = "My subject";
-		$txt = "Hello world!";
-		$headers = "From: rajkiranb@bsf.io";
-
-		$sent = wp_mail( get_option( 'admin_email' ), 'Cron Test', 'All good in the hood!' );
-		// die();
-		// $to = 'rajkiranbagal8585@gmail.com';
-		// $subject = 'CSV Ali baba';
-		// $message = 'Message';
-		// $headers = 'From: ' . 'rajkiranb@bsf.io';
-		// $attachment = $filepath;
 		
-		// $sent = wp_mail($to, $subject, $message, '', $attachment);
-		// error_log('higghkkkkkkkkkkkkkk');
-		error_log( print_r( $sent, true ) );
-		die();
+		$to = get_option( 'admin_email' );
+		$subject = 'CSV Recieved';
+		$message = 'Message';
+		$attachment = $filepath;
+		
+		$sent = wp_mail($to, $subject, $message, '', $attachment);
+
 		return false;
 	}
 
@@ -78,7 +69,6 @@ class BQ_Background_Process extends WP_Background_Process {
 	 * performed, or, call parent::complete().
 	 */
 	protected function complete() {
-		error_log('complt');
 		parent::complete();
 	}
 }

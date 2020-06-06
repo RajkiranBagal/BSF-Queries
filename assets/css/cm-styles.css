@@ -1,0 +1,193 @@
+/*CSS for cm-coupon-generator.php*/
+/*Parent div*/
+.cm-main{
+	background: #ffffff; 
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+	max-width: 1150px;
+}
+.cm-main input[type=text]::placeholder, input[type=number]::placeholder{
+  font-size: 12px;
+}
+/*Title of Main div*/
+.cm-title{
+	border-bottom: 1px solid #eeeeee;
+	margin: unset;
+	padding: 1em 1em;
+}
+/*Div for tabs.*/
+.cm-inside{
+	display: inline-block;
+	width: 22.01%;
+}
+/*Lists for section-tabs.*/
+.cm-ul-list{
+	float: left;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 20px;
+	color: #0073aa;
+	background: #fafafa;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	line-height: 20px;
+	text-decoration: none;
+	margin: unset;
+	padding: unset;
+}
+.cm-ul-list li{
+	border-bottom: 1px solid #eee;
+	padding: 1em 1em;
+	margin: unset;
+}
+.cm-ul-list li a{
+	text-decoration: none;
+}
+.cm-ul-list li:hover{
+	color: #00a0d2;
+}
+/*Icons for sections in div cm-inside*/
+.cm-general::before{
+    font-family: "FontAwesome";
+    content: "\f013";
+    font-size: 15px;
+}
+.cm-restriction::before{
+	font-family: "FontAwesome";
+	content: "\f05e";
+	font-size: 15px;
+}
+.cm-limit::before{
+	font-family: "FontAwesome";
+	content: "\f0e4";
+	font-size: 15px;
+}
+/*Title for input fields*/
+.cm-heading-title{
+	font-weight: normal;
+}
+/*CSS for active-tab*/
+.cm-active {
+	background: #eeeeee;
+	color: #555555;
+}
+/*Div containing input fields.*/
+.cm-input-div{
+	float: right;
+	overflow: hidden;
+	display: flex;
+	width: 77.9%;
+	height: auto;
+	min-height: 200px;
+	font-size: 12px;
+	font-weight: 400;
+	display: inline;
+	padding-top: 15px;
+	margin: unset;
+	border-left: 1px solid #eeeeee;
+}
+/*Div for Usage Restrictions & Limit.*/
+.cm-limit-div, .cm-restriction-div{
+	display: none;
+}
+/*Common class for table in all 3 sections.*/
+.cm-table th{
+	width:200px;
+	text-align: left;
+	padding-left: 20px;
+}
+.cm-table tr td{
+	padding-right: 20px;
+}
+/*Table for General.*/
+.cm-general-table{
+	display: block;
+	border-collapse: collapse;
+}
+.cm-general-table tr:last-child{
+	background: #f7fcfe;
+	border-top: 1px solid #eeeeee;
+}
+.cm-general-table tr:last-child td{
+	padding: 20px 0px; 
+}
+.cm-general-table tr:last-child th{
+	vertical-align: baseline;
+	padding-top: 10px;
+}
+.cm-general-table tr:nth-child(4){
+	vertical-align: baseline;
+}
+.cm-general-table tr:nth-child(5) td{
+	padding-bottom: 20px;
+}
+/*CSS for Coupon Expiry Date*/
+.cm-last h4{
+	margin-top: unset;
+}
+.cm-last{
+	padding-top: unset;
+}
+/*Table for Usage restriction.*/
+.cm-restriction-table tr:last-child th{
+	margin-bottom: 20px;
+}
+.cm-restriction-table{
+	display: none;
+}
+.cm-restriction-table tr:last-child th h4{
+	margin-top: unset;
+}
+/*Table for Usage Limit.*/
+.cm-limit-table{
+	display: none;
+}
+/*CSS for cm-coupon-importer.php*/
+/*First child div.*/
+.cm-child-one{
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+/*Second child div.*/
+.cm-child-two{
+	margin-bottom: 15px;
+}
+/*Third child div.*/
+.cm-child-three{
+	margin-left: 25px;
+}
+/*CSS for action title.*/
+.cm-formtitle{
+	font-size:14px; 
+}
+.cm-formtitle::before{
+	font-family: "FontAwesome";
+	content: "\f111 ";
+	font-size: 6px;
+	vertical-align: text-top;
+	/*color: #696969;*/
+}
+.cm-file{
+	margin-left: 25px;
+}
+/*CSS for cm-getting-started.php*/
+/*CSS for main div.*/
+.cm_user_manual{
+	max-width: 1150px;
+}
+/*CSS for generate-tab div*/
+.cm-generate-tab{
+	margin-left: 25px;
+}
+/*CSS for import-tab div*/
+.cm-import-tab{
+	margin-left: 25px;
+}
+.cm-icon::before{
+	font-family: "FontAwesome";
+	content: "\f111 ";
+	font-size: 6px;
+	vertical-align: text-top;
+	/*color: #696969;*/
+}

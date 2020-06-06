@@ -58,7 +58,7 @@ class BQ_Background_Process extends WP_Background_Process {
 		$attachment = $filepath;
 		
 		$sent = wp_mail($to, $subject, $message, '', $attachment);
-
+error_log('here');
 		return false;
 	}
 

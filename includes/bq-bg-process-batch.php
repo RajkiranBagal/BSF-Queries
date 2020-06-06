@@ -79,7 +79,8 @@ if ( ! class_exists( 'BQ_Batch' ) ) :
 		public function bq_start_process() {
 
             global $wpdb;
-            $test_query = 'SELECT * FROM $wpdb->options';
+
+            $test_query = "SELECT * FROM $wpdb->options";
             
             $this->background_process->push_to_queue($test_query);
             
